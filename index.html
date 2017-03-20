@@ -8,6 +8,7 @@
   <meta name="description" content="EFT">
   <meta name="author" content="MJALETTE">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,11 +17,11 @@
 
  
 <body style="height:100%; margin:0; padding:0;">
-  <object id="flashcontent"
-         classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-         width="100%"
-         height="100%">
-    <param name="movie" value="https://cdn.rawgit.com/majalette/eft/9dbe6149/EFT/EFT.swf" />
-  </object>
+  <div id="flashcontent">
+  </div>
+  
+  <script type="text/javascript">
+  swfobject.embedSWF("https://cdn.rawgit.com/majalette/eft/9dbe6149/EFT/EFT.swf", "flashcontent", "100%", "100%", "9");
+</script>
 </body>
 </html>
